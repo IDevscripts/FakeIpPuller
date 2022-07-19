@@ -1,0 +1,357 @@
+--[[
+											                  //Simple Fake Ip Puller\\
+	
+											                          \Made By/     
+	
+	ZZZZZZZZZZZZZZZZZZZ                                        SSSSSSSSSSSSSSS                                    
+	Z:::::::::::::::::Z                                      SS:::::::::::::::S                                   
+	Z:::::::::::::::::Z                                     S:::::SSSSSS::::::S                                   
+	Z:::ZZZZZZZZ:::::Z                                      S:::::S     SSSSSSS                                   
+	ZZZZZ     Z:::::Z    aaaaaaaaaaaaa  ppppp   ppppppppp   S:::::S            uuuuuu    uuuuuu  zzzzzzzzzzzzzzzzz
+	        Z:::::Z      a::::::::::::a p::::ppp:::::::::p  S:::::S            u::::u    u::::u  z:::::::::::::::z
+	       Z:::::Z       aaaaaaaaa:::::ap:::::::::::::::::p  S::::SSSS         u::::u    u::::u  z::::::::::::::z 
+	      Z:::::Z                 a::::app::::::ppppp::::::p  SS::::::SSSSS    u::::u    u::::u  zzzzzzzz::::::z  
+	     Z:::::Z           aaaaaaa:::::a p:::::p     p:::::p    SSS::::::::SS  u::::u    u::::u        z::::::z   
+	    Z:::::Z          aa::::::::::::a p:::::p     p:::::p       SSSSSS::::S u::::u    u::::u       z::::::z    
+	   Z:::::Z          a::::aaaa::::::a p:::::p     p:::::p            S:::::Su::::u    u::::u      z::::::z     
+	ZZZ:::::Z     ZZZZZa::::a    a:::::a p:::::p    p::::::p            S:::::Su:::::uuuu:::::u     z::::::z      
+	Z::::::ZZZZZZZZ:::Za::::a    a:::::a p:::::ppppp:::::::pSSSSSSS     S:::::Su:::::::::::::::uu  z::::::zzzzzzzz
+	Z:::::::::::::::::Za:::::aaaa::::::a p::::::::::::::::p S::::::SSSSSS:::::S u:::::::::::::::u z::::::::::::::z
+	Z:::::::::::::::::Z a::::::::::aa:::ap::::::::::::::pp  S:::::::::::::::SS   uu::::::::uu:::uz:::::::::::::::z
+	ZZZZZZZZZZZZZZZZZZZ  aaaaaaaaaa  aaaap::::::pppppppp     SSSSSSSSSSSSSSS       uuuuuuuu  uuuuzzzzzzzzzzzzzzzzz
+	                                     p:::::p                                                                  
+	                                     p:::::p                                                                  
+	                                    p:::::::p                                                                 
+	                                    p:::::::p                                                                 
+	                                    p:::::::p                                                                 
+	                                    ppppppppp                                                                 
+]]
+local FIPP = Instance.new("ScreenGui")
+local Up = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UpFront = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local TextButton2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Down = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+
+--Properties:
+
+FIPP.Name = "FIPP"
+FIPP.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+FIPP.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Up.Name = "Up"
+Up.Parent = FIPP
+Up.BackgroundColor3 = Color3.fromRGB(50, 0, 0)
+Up.Position = UDim2.new(-0.00431034481, 0, 0.317460328, 0)
+Up.Size = UDim2.new(0, 219, 0, 230)
+
+UICorner.Parent = Up
+
+UpFront.Name = "UpFront"
+UpFront.Parent = Up
+UpFront.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+UpFront.Position = UDim2.new(-0.00456619263, 0, 0.0260869563, 0)
+UpFront.Size = UDim2.new(0, 213, 0, 218)
+
+TextLabel.Parent = Up
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0410958901, 0, 0.0565217398, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Fake Ip Puller"
+TextLabel.TextColor3 = Color3.fromRGB(43, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextButton.Parent = Up
+TextButton.BackgroundColor3 = Color3.fromRGB(50, 0, 0)
+TextButton.Position = UDim2.new(0.0410958901, 0, 0.717391312, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.Nunito
+TextButton.Text = "Send Fake Ip"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UICorner_2.Parent = TextButton
+
+TextBox.Parent = Up
+TextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0410958901, 0, 0.360869557, 0)
+TextBox.Size = UDim2.new(0, 200, 0, 50)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "User Here"
+TextBox.TextColor3 = Color3.fromRGB(66, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+TextButton2.Name = "TextButton2"
+TextButton2.Parent = Up
+TextButton2.BackgroundColor3 = Color3.fromRGB(50, 0, 0)
+TextButton2.Position = UDim2.new(0.867579937, 0, 0, 0)
+TextButton2.Size = UDim2.new(0, 29, 0, 29)
+TextButton2.Font = Enum.Font.SourceSans
+TextButton2.Text = "X"
+TextButton2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton2.TextScaled = true
+TextButton2.TextSize = 14.000
+TextButton2.TextWrapped = true
+
+UICorner_3.Parent = TextButton2
+
+Down.Name = "Down"
+Down.Parent = FIPP
+Down.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Down.Position = UDim2.new(-0.0172413792, 0, 0.960317433, 0)
+Down.Size = UDim2.new(0, 132, 0, 31)
+Down.Visible = false
+Down.Font = Enum.Font.SourceSans
+Down.Text = "Fake Ip Puller"
+Down.TextColor3 = Color3.fromRGB(132, 0, 0)
+Down.TextSize = 15.000
+Down.TextWrapped = true
+
+UICorner_4.Parent = Down
+
+-- Scripts:
+
+local function FOPEAX_fake_script() -- FIPP.RNDNSCR 
+	local script = Instance.new('Script', FIPP)
+
+	local random = function(a, b)
+		local rand1 = Random.new()
+		return rand1:NextInteger(a, b)
+	end
+	script.Parent.Name = random(1000, 99999)
+	script.Name = random(1000, 99999)
+end
+coroutine.wrap(FOPEAX_fake_script)()
+local function VGKQ_fake_script() -- UICorner.RNDNSCR 
+	local script = Instance.new('Script', UICorner)
+
+	local random = function(a, b)
+		local rand1 = Random.new()
+		return rand1:NextInteger(a, b)
+	end
+	script.Parent.Name = random(1000, 99999)
+	script.Name = random(1000, 99999)
+end
+coroutine.wrap(VGKQ_fake_script)()
+local function GYFYXZ_fake_script() -- Up.RNDNSCR 
+	local script = Instance.new('Script', Up)
+
+	local random = function(a, b)
+		local rand1 = Random.new()
+		return rand1:NextInteger(a, b)
+	end
+	script.Parent.Name = random(1000, 99999)
+	script.Name = random(1000, 99999)
+end
+coroutine.wrap(GYFYXZ_fake_script)()
+local function WNPABX_fake_script() -- UpFront.RNDNSCR 
+	local script = Instance.new('Script', UpFront)
+
+	local random = function(a, b)
+		local rand1 = Random.new()
+		return rand1:NextInteger(a, b)
+	end
+	script.Parent.Name = random(1000, 99999)
+	script.Name = random(1000, 99999)
+end
+coroutine.wrap(WNPABX_fake_script)()
+local function SCVDKF_fake_script() -- TextLabel.RNDNSCR 
+	local script = Instance.new('Script', TextLabel)
+
+	local random = function(a, b)
+		local rand1 = Random.new()
+		return rand1:NextInteger(a, b)
+	end
+	script.Parent.Name = random(1000, 99999)
+	script.Name = random(1000, 99999)
+end
+coroutine.wrap(SCVDKF_fake_script)()
+local function CQYTGOL_fake_script() -- UICorner_2.RNDNSCR 
+	local script = Instance.new('Script', UICorner_2)
+
+	local random = function(a, b)
+		local rand1 = Random.new()
+		return rand1:NextInteger(a, b)
+	end
+	script.Parent.Name = random(1000, 99999)
+	script.Name = random(1000, 99999)
+end
+coroutine.wrap(CQYTGOL_fake_script)()
+local function NSYK_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+	local Chat = function(Plr, Msg)
+		if Plr == "Local" or Plr == "LocalPlayer" then
+			local ChatService = game:GetService("Chat")
+			local lplayer = game:GetService("Players").LocalPlayer.Character.Head
+			local tplayer = nil
+			local part = lplayer
+			ChatService:Chat(part, Msg, "White")
+		else 
+			if not game:GetService("Players"):FindFirstChild("Plr") then
+				return false
+			elseif game:GetService("Players"):FindFirstChild("Plr") then
+				local ChatService = game:GetService("Chat")
+				local lplayer = game:GetService("Players"):FindFirstChild("Plr").Character
+				local part = lplayer
+				ChatService:Chat(part, Msg, "White")
+			end
+		end
+	end
+	local ipGen = function()
+		local randomNum = function(a,b)
+			local gen = Random.new()
+			return gen:NextInteger(a,b)
+		end
+		return (randomNum(10,99).."."..randomNum(10,99).."."..randomNum(100,999).."."..randomNum(100,999))
+	end
+	if not script.Parent.Parent:FindFirstChildWhichIsA("TextBox") or not script.Parent then
+		error("Missing Element")
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Chat("Local", (script.Parent.Parent:FindFirstChildWhichIsA("TextBox").Text.."'s ip Is "..ipGen()))
+	end)
+end
+coroutine.wrap(NSYK_fake_script)()
+local function MLTX_fake_script() -- nil.RNDNSCR 
+	local script = Instance.new('Script', nil)
+
+	local random = function(a, b)
+		local rand1 = Random.new()
+		return rand1:NextInteger(a, b)
+	end
+	script.Parent.Name = random(1000, 99999)
+	script.Name = random(1000, 99999)
+end
+coroutine.wrap(MLTX_fake_script)()
+local function FKUMOTZ_fake_script() -- TextButton.RNDNSCR 
+	local script = Instance.new('Script', TextButton)
+
+	local random = function(a, b)
+		local rand1 = Random.new()
+		return rand1:NextInteger(a, b)
+	end
+	script.Parent.Name = random(1000, 99999)
+	script.Name = random(1000, 99999)
+end
+coroutine.wrap(FKUMOTZ_fake_script)()
+local function AUGETQ_fake_script() -- TextBox.RNDNSCR 
+	local script = Instance.new('Script', TextBox)
+
+	local random = function(a, b)
+		local rand1 = Random.new()
+		return rand1:NextInteger(a, b)
+	end
+	script.Parent.Name = random(1000, 99999)
+	script.Name = random(1000, 99999)
+end
+coroutine.wrap(AUGETQ_fake_script)()
+local function QDMAW_fake_script() -- TextButton2.RNDNSCR 
+	local script = Instance.new('Script', TextButton2)
+
+	local random = function(a, b)
+		local rand1 = Random.new()
+		return rand1:NextInteger(a, b)
+	end
+	script.Parent.Name = random(1000, 99999)
+	script.Name = random(1000, 99999)
+end
+coroutine.wrap(QDMAW_fake_script)()
+local function UFXET_fake_script() -- UICorner_3.RNDNSCR 
+	local script = Instance.new('Script', UICorner_3)
+
+	local random = function(a, b)
+		local rand1 = Random.new()
+		return rand1:NextInteger(a, b)
+	end
+	script.Parent.Name = random(1000, 99999)
+	script.Name = random(1000, 99999)
+end
+coroutine.wrap(UFXET_fake_script)()
+local function WMIW_fake_script() -- TextButton2.Script 
+	local script = Instance.new('Script', TextButton2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent:GetChildren()) do
+			if v:IsA("TextBox") or v:IsA("TextButton") or v:IsA("Frame") or v:IsA("TextLabel") then
+				v.Visible = false
+			end
+			script.Parent.Parent.Visible = false
+			script.Parent.Parent.Parent:FindFirstChildWhichIsA("TextButton").Visible = true
+		end
+	end)
+end
+coroutine.wrap(WMIW_fake_script)()
+local function GFZLW_fake_script() -- nil.RNDNSCR 
+	local script = Instance.new('Script', nil)
+
+	local random = function(a, b)
+		local rand1 = Random.new()
+		return rand1:NextInteger(a, b)
+	end
+	script.Parent.Name = random(1000, 99999)
+	script.Name = random(1000, 99999)
+end
+coroutine.wrap(GFZLW_fake_script)()
+local function CDTYY_fake_script() -- UICorner_4.RNDNSCR 
+	local script = Instance.new('Script', UICorner_4)
+
+	local random = function(a, b)
+		local rand1 = Random.new()
+		return rand1:NextInteger(a, b)
+	end
+	script.Parent.Name = random(1000, 99999)
+	script.Name = random(1000, 99999)
+end
+coroutine.wrap(CDTYY_fake_script)()
+local function BDWILNK_fake_script() -- Down.Script 
+	local script = Instance.new('Script', Down)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.Parent:FindFirstChildWhichIsA("Frame"):GetChildren()) do
+			if v:IsA("TextBox") or v:IsA("TextButton") or v:IsA("Frame") or v:IsA("TextLabel") then
+				v.Visible = true
+			end
+			script.Parent.Parent:FindFirstChildWhichIsA("Frame").Visible = true
+			script.Parent.Visible = false
+		end
+	end)
+end
+coroutine.wrap(BDWILNK_fake_script)()
+local function PLNS_fake_script() -- nil.RNDNSCR 
+	local script = Instance.new('Script', nil)
+
+	local random = function(a, b)
+		local rand1 = Random.new()
+		return rand1:NextInteger(a, b)
+	end
+	script.Parent.Name = random(1000, 99999)
+	script.Name = random(1000, 99999)
+end
+coroutine.wrap(PLNS_fake_script)()
+local function GTAQA_fake_script() -- Down.RNDNSCR 
+	local script = Instance.new('Script', Down)
+
+	local random = function(a, b)
+		local rand1 = Random.new()
+		return rand1:NextInteger(a, b)
+	end
+	script.Parent.Name = random(1000, 99999)
+	script.Name = random(1000, 99999)
+end
+coroutine.wrap(GTAQA_fake_script)()
